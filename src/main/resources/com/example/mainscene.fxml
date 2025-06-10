@@ -7,34 +7,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrimaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
    <children>
       <Label alignment="CENTER" layoutX="171.0" layoutY="31.0" prefHeight="83.0" prefWidth="258.0" text="To-Do-List">
          <font>
             <Font name="Modern No. 20" size="31.0" />
          </font>
       </Label>
-      <TextField id="tfTask1" fx:id="tfTask1" layoutX="77.0" layoutY="153.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField fx:id="tfTask1" layoutX="77.0" layoutY="153.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField id="tfTask2" fx:id="tfTask2" layoutX="77.0" layoutY="222.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField fx:id="tfTask2" layoutX="77.0" layoutY="222.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField id="tfTask3" fx:id="tfTask3" layoutX="77.0" layoutY="296.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField fx:id="tfTask3" layoutX="77.0" layoutY="296.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField id="tfTask4" fx:id="tfTask4" layoutX="77.0" layoutY="373.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField fx:id="tfTask4" layoutX="77.0" layoutY="373.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField id="tfTask5" fx:id="tfTask5" layoutX="77.0" layoutY="463.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField fx:id="tfTask5" layoutX="77.0" layoutY="463.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
@@ -44,42 +44,42 @@
             <Font name="Modern No. 20" size="31.0" />
          </font>
       </Label>
-      <TextField id="tfAddTask" fx:id="tfAddTask" layoutX="77.0" layoutY="673.0" prefHeight="25.0" prefWidth="309.0" promptText="Add new task">
+      <TextField fx:id="tfAddTask" layoutX="77.0" layoutY="673.0" prefHeight="25.0" prefWidth="309.0" promptText="Add new task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="448.0" layoutY="156.0" mnemonicParsing="false" text="Clear">
+      <Button layoutX="448.0" layoutY="156.0" mnemonicParsing="false" text="Clear" onAction="#clearTask1">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="448.0" layoutY="225.0" mnemonicParsing="false" text="Clear">
+      <Button layoutX="448.0" layoutY="225.0" mnemonicParsing="false" text="Clear" onAction="#clearTask2">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="448.0" layoutY="299.0" mnemonicParsing="false" text="Clear">
+      <Button layoutX="448.0" layoutY="299.0" mnemonicParsing="false" text="Clear" onAction="#clearTask3">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="448.0" layoutY="376.0" mnemonicParsing="false" text="Clear">
+      <Button layoutX="448.0" layoutY="376.0" mnemonicParsing="false" text="Clear" onAction="#clearTask4">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="448.0" layoutY="466.0" mnemonicParsing="false" text="Clear">
+      <Button layoutX="448.0" layoutY="466.0" mnemonicParsing="false" text="Clear" onAction="#clearTask5">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="448.0" layoutY="676.0" mnemonicParsing="false" text="Add Task">
+      <Button layoutX="448.0" layoutY="676.0" mnemonicParsing="false" text="Add Task" onAction="#addTask">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="124.0" layoutY="521.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="215.0" text="Clear All Tasks ">
+      <Button layoutX="124.0" layoutY="521.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="215.0" text="Clear All Tasks" onAction="#clearAllTasks">
          <font>
             <Font size="14.0" />
          </font>
