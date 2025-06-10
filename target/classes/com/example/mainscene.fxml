@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrimaryController">
    <children>
       <Label alignment="CENTER" layoutX="171.0" layoutY="31.0" prefHeight="83.0" prefWidth="258.0" text="To-Do-List">
@@ -15,27 +14,27 @@
             <Font name="Modern No. 20" size="31.0" />
          </font>
       </Label>
-      <TextField fx:id="tfTask1" layoutX="77.0" layoutY="153.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField id="tfTask1" fx:id="tfTask1" layoutX="77.0" layoutY="153.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfTask2" layoutX="77.0" layoutY="222.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField id="tfTask2" fx:id="tfTask2" layoutX="77.0" layoutY="222.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfTask3" layoutX="77.0" layoutY="296.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField id="tfTask3" fx:id="tfTask3" layoutX="77.0" layoutY="296.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfTask4" layoutX="77.0" layoutY="373.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField id="tfTask4" fx:id="tfTask4" layoutX="77.0" layoutY="373.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfTask5" layoutX="77.0" layoutY="463.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
+      <TextField id="tfTask5" fx:id="tfTask5" layoutX="77.0" layoutY="463.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Task">
          <font>
             <Font size="14.0" />
          </font>
@@ -45,7 +44,7 @@
             <Font name="Modern No. 20" size="31.0" />
          </font>
       </Label>
-      <TextField fx:id="tfAddTask" layoutX="77.0" layoutY="673.0" prefHeight="25.0" prefWidth="309.0" promptText="Add new task">
+      <TextField id="tfAddTask" fx:id="tfAddTask" layoutX="77.0" layoutY="673.0" prefHeight="25.0" prefWidth="309.0" promptText="Add new task">
          <font>
             <Font size="14.0" />
          </font>
