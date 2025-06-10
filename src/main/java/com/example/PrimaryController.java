@@ -1,6 +1,7 @@
 package com.example;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 public class PrimaryController {
@@ -18,24 +19,36 @@ public class PrimaryController {
     private TextField tfTask5;
 
     @FXML
-    private void addTask() {
-        String newTask = tfAddTask.getText();
-        if (!newTask.isEmpty()) {
-            // Add task to the first empty TextField
-            if (tfTask1.getText().isEmpty()) {
-                tfTask1.setText(newTask);
-            } else if (tfTask2.getText().isEmpty()) {
-                tfTask2.setText(newTask);
-            } else if (tfTask3.getText().isEmpty()) {
-                tfTask3.setText(newTask);
-            } else if (tfTask4.getText().isEmpty()) {
-                tfTask4.setText(newTask);
-            } else if (tfTask5.getText().isEmpty()) {
-                tfTask5.setText(newTask);
-            }
-            tfAddTask.clear();
-        }
+private void addTask() {
+    String newTask = tfAddTask.getText();
+    if (newTask.isEmpty()) {
+        showAlert("Error", "Please enter a task.");
+        return;
     }
+    // Existing logic to add task
+    if (tfTask1.getText().isEmpty()) {
+        tfTask1.setText(newTask);
+    } else if (tfTask2.getText().isEmpty()) {
+        tfTask2.setText(newTask);
+    } else if (tfTask3.getText().isEmpty()) {
+        tfTask3.setText(newTask);
+    } else if (tfTask4.getText().isEmpty()) {
+        tfTask4.setText(newTask);
+    } else if (tfTask5.getText().isEmpty()) {
+        tfTask5.setText(newTask);
+    } else {
+        showAlert("Error", "All task slots are full.");
+    }
+    tfAddTask.clear();
+}
+
+private void showAlert(String title, String message) {
+    Alert alert = new Alert(Alert.AlertType.ERROR);
+    alert.setTitle(title);
+    alert.setHeaderText(null);
+    alert.setContentText(message);
+    alert.showAndWait();
+}
 
     @FXML
     private void clearTask1() {
