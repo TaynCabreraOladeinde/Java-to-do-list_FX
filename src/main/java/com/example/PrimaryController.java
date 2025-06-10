@@ -22,7 +22,7 @@ public class PrimaryController {
 private void addTask() {
     String newTask = tfAddTask.getText();
     if (newTask.isEmpty()) {
-        showAlert("Error", "Please enter a task.");
+        showAlert("Error", "Task Cannot be empty.");
         return;
     }
     // Existing logic to add task
